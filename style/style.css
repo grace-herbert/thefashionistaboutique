@@ -1,0 +1,373 @@
+@media (max-width: 780px){
+
+}
+
+@media (max-width: 600px){
+
+}
+
+@media (max-width: 480px){
+    .regSbmtbtn{
+    margin:auto;
+    background-color: #3b3b3b;
+    flex-wrap: wrap;
+    color: white;
+}
+}
+
+/***************Homepage*****************/
+/*****************header*******************/
+
+.header{
+    height: 175px;
+}
+
+.leftHeader{
+    width: 350px;
+}
+
+.imgLogo{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+/*****************navbar*******************/
+.navbar-brand{
+    padding-left: 20px;
+}
+
+#navcol{
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.nav-item{
+    padding-right: 35px;
+}
+
+.top-nav-item{
+    padding-right: 20px;
+}
+
+/*****************Cards***************
+
+
+/*cards need padding on the left*/
+.card1row{
+    padding-left: 20px;
+}
+
+.card-title{
+    font-size: 24px;
+
+}
+
+.cPrice{
+    font-size: 20px;
+    text-align: right;
+}
+
+.card{
+    justify-content: space-around;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.col-sm-5{
+    padding-bottom: 25px;
+}
+
+.btn-dark{
+    background: #3b3b3b;
+}
+
+/**************footer********************/
+
+.footer{
+    background-color: #3b3b3b;
+    height: 100%;
+    color: white;
+}
+
+.businessAddress{
+    padding-top: 50px;
+    padding: 20px;
+    
+}
+
+#footerLogo{
+    padding-top: 20%;
+   
+}
+
+.h5Address{
+    font-weight: normal;
+}
+
+
+.form-label{
+    width: 100px;
+}
+
+.form-control{
+    width: 200px;
+    height: 40px;
+}
+
+.regEmail{
+    width: 350px;
+}
+
+.footerH1{
+    padding-top: 35px;
+    font-size: 22px;
+}
+
+.regLName{
+    padding-top: 7px;
+}
+
+
+#conQuery{
+    height: 150px;
+    width: 350px;
+}
+
+#conEmail{
+    width: 350px;
+}
+
+.contact{
+    padding-left: 25px;
+}
+
+.btn-submit{
+    background: white;
+}
+
+
+.conLabel{
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+/*rounded corners added to labels*/
+.conCorners{
+    border-radius: 5px;
+    height: 44px;
+}
+
+.sbmtbtn{
+    width: 80px;
+    background-color: white;
+    font-weight: 600;
+}
+
+.signUp{
+    padding-left: 25px;
+}
+
+/***************Clothingpage*****************/
+.containerCenter{
+    padding-left: 8%;
+    
+}
+/*********banner**********/
+
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;   
+
+}
+
+
+
+.clothesBanner{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*********dresses**********/
+
+.clothesContainer{
+    display: flex;
+    flex-basis: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.aboveSpace{
+    flex-basis: 100%;
+    flex: 1 0 100%;
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+    height: 250px;
+}
+
+.h1ClothingCards{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color: #3b3b3b;
+}
+
+.text-reset{
+     
+}
+/*changed colour of navigation font*/
+.text-nav{
+    color: #3b3b3b;
+}
+/*pad the top of the mid page navbar*/
+.midPageNav{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+/*
+.dressesContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-basis: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+*/
+
+
+
+.clothingCards{
+    display: flex;
+    width: 10%;
+    height: 95%;
+    justify-content: space-around;
+    flex: 1;    
+}
+
+.cardImg{
+    margin: 0 auto;
+
+}
+
+.cardTxt{
+    text-align: center;
+}
+
+.cardPrice{
+    font-size: 20px;
+    text-align: end;
+}
+
+/***********Modals*****************/
+.quantity{
+    padding-right: 20%;
+}
+
+.btn-sm{
+    width: 100%;
+}
+
+#mPrice{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.text-quan{
+    color: black;
+    text-decoration: none;
+}
+
+/************basket************/
+
+#basketBody{
+    background: #3b3b3b;
+
+}
+
+.basketHeader{
+    background: white;
+}
+
+.space{
+    height: 30px;
+}
+
+/*rounded corners added*/
+.basket{
+    padding-top: 10%;
+    background: white;
+    width: 70%;
+    height: 500px;
+    border-radius: 15px;
+}
+
+/************Create Account**************/
+
+/*
+#regNames{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2.5%;
+
+
+}
+*/
+
+/*
+#regEmPs{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2.5%;
+}
+*/
+
+
+input[name = "regEmail"]{
+    width: 35%;
+}
+
+input[name = "pswd"]{
+    width: 35%;
+}
+
+.regSbmtbtn{
+/*    margin-left: 83.5%;*/
+    background-color: #3b3b3b;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.account{
+    padding-top: 5%;
+    background: white;
+    width: 85%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.cAccImg{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20%;
+    }
+
+.logImg{
+    padding-bottom: 20%;
+    padding-right: 15%
+}
+/*
+#regSbmt{
+    padding-left: 8%;
+}
+*/

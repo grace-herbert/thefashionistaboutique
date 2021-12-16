@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Fashionista Boutique Clothing Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css"/>
+</head>
+
+<body id="paymentBody">
+    <!--    ****************header******************-->
+    
+<!--    logo made with image editing in canva-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 header basketHeader">
+                <div class="row">
+                    <div class="col-lg-3">
+                      <img src="../images/logo.png" alt="The Fashionista logo with writing and a black and white image of a woman" class="imgLogo">
+                 
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--    ****************Navbar for lg******************-->
+    
+<!--    changed colour of bar and font, added icons to bar-->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light" style= "background-color: #3b3b3b;">
+      <div class="container-fluid"  id="navcol">
+        <a class="navbar-brand" href="../index.html#home">The Fashionista Boutique</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="top-nav-item lessWide">
+              <a class="nav-link active" aria-current="page" href="../index.html#home">Home</a>
+            </li>
+            <li class="top-nav-item wider">
+              <a class="nav-link" href="../clothing/index.html#mostPopular">Most Popular</a>
+            </li>
+              <li class="top-nav-item lessWide">
+              <a class="nav-link" href="../clothing/index.html#dresses">Dresses</a>
+            </li>
+            <li class="top-nav-item wider">
+              <a class="nav-link" href="../clothing/index.html#tops">Tops</a>
+            </li>
+              <li class="top-nav-item wider">
+              <a class="nav-link" href="../clothing/index.html#skirts">Skirts</a>
+            </li>
+              <li class="top-nav-item lessWide">
+              <a class="nav-link" href="#trousers">Trousers</a>
+            </li>
+            <li class="top-nav-item wider">
+              <a class="nav-link" href="../clothing/index.html#coats">Coats</a>
+            </li>
+            <li class="top-nav-item wider">
+              <a class="nav-link" href="../clothing/index.html#accessories">Accessories</a>
+            </li>
+            <li class="top-nav-item wider">
+              <a class="nav-link" href="../login/index.html"><img src="../images/user.png" alt="Abstract person image. Login image. User image." class="imgUser"></a>
+            </li>
+              <li class="top-nav-item wider">
+              <a class="nav-link" href="../orders/index.html"><img src="../images/cart.png" alt="Abstract cart image. Basket image." class="imgCart"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    
+<!--    **************body***************-->
+    <div class="container-fluid space">
+        <div class="row">
+            <div class="col-lg-9">
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid basket">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>Payment</h1>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid space">
+        <div class="row">
+            <div class="col-lg-9">
+                
+            </div>
+        </div>
+    </div>
+<footer>
+    <!--  ***************footer ******************-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 footer basketFooter">
+                <div class="row">
+ <!--***********************Contact Us**********************-->
+                    <div class="col-lg-5 contact">
+                        <h1 class = "footerH1">Contact Us</h1>
+                        <form onsubmit="submitContact()" method="post" action="mailto:herbert.grace.c@gmail.com">
+                          <label for="fname" class="conLabel conFName">First name:</label>
+                            <br>
+                          <input type="text" id="fname" name="fname" class="conCorners">
+                            <br>
+                          <label for="lname" class="conLabel">Last name:</label>
+                            <br>
+                          <input type="text" id="lname" name="lname" class="conCorners">
+                            <br>
+                          <label for="email" class="conLabel">email:</label>
+                            <br>
+                          <input type="email" id="conEmail" name="email" class="conCorners">
+                            <br>
+                          <label for="query" class="conLabel">Query:</label>
+                            <br>
+                          <input type="text" id="conQuery" name="query" class="conCorners">
+                            <br>
+                            <br>
+        <!--                    <button class="btn-submit">Submit</button>-->
+                          <input type="submit" value="Submit" class="conCorners sbmtbtn basketConSubmitBtn">
+                            <br>
+                        </form>
+                        <br>
+                    </div>
+
+
+    <!--  ***************business address ******************-->
+
+                    <div class="col-lg-7 businessAddress">
+                        <br>
+                        <h5 class= "h5Address">
+                            Address:<br>
+                            <br>
+                            The Fashionista Boutique<br>
+                            54 Wine St.<br>
+                            Sligo,<br>
+                            Co. Sligo </h5>
+                        
+                            <img id= "footerLogo" src="../images/logo.png" alt="The Fashionista logo with writing and a black and white image of a woman" class="imgLogo">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</footer>
+  <script src="../script.js"></script>  
+</body>
+</html>
+        
