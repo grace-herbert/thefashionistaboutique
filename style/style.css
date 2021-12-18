@@ -51,6 +51,7 @@
 /*****************navbar*******************/
 .navbar-brand{
     padding-left: 20px;
+    
 }
 
 #navcol{
@@ -59,7 +60,9 @@
 }
 
 .nav-item{
-    padding-right: 35px;
+    padding-left: 5%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .top-nav-item{
@@ -71,7 +74,7 @@
 /*helped by code found from https://stackoverflow.com/questions/38695846/change-height-of-bootstrap-carousel-keeping-it-responsive/38696655 to help make the carousel take up less space yet keep the responsiveness*/
 .carousel img {
     width: auto;
-    max-height: 550px;
+    max-height: 700px;
     margin: 0 auto;
 }
 
@@ -83,7 +86,13 @@ cards need padding on the left
 }
 
 .card-title{
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 600;
+
+}
+
+.pd{
+    padding-bottom: 20%;
 
 }
 
@@ -94,6 +103,8 @@ cards need padding on the left
 
 .card{
     justify-content: space-around;
+    padding-top: 15%;
+    margin-bottom: 12%;
 }
 
 .row{
@@ -108,10 +119,15 @@ cards need padding on the left
     background: #3b3b3b;
 }
 
+.h1ClothingCards{
+    padding-left: 10%;
+} 
+
 /**************footer********************/
 
 .footer{
     background-color: #3b3b3b;
+    width: 100%;
     height: 100%;
     color: white;
 }

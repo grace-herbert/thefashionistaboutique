@@ -43,6 +43,9 @@
               <a class="nav-link active" aria-current="page" href="../index.html#home">Home</a>
             </li>
             <li class="top-nav-item wider">
+              <a class="nav-link" href="index.html">Clothing</a>
+            </li>
+            <li class="top-nav-item wider">
               <a class="nav-link" href="#mostPopular">Most Popular</a>
             </li>
               <li class="top-nav-item lessWide">
@@ -150,12 +153,9 @@
 <!--    Prices will be added to the cards by final report. All pics in cards resized to appropriate size per card-->
     
 <!--********************** Space ********************-->
-    <div class="container-fluid col-lg-12 containerCenter">
+<!--    <div class="container-fluid col-lg-12 containerCenter">-->
         <div class="col-lg-12 aboveSpace">
             <ul class="nav midPageNav">
-            <li class="top-nav-item wider">
-              <a class="nav-link" href="clothing/index.html">Clothing</a>
-            </li>
                 <li class="nav-item">
                     <a class="nav-link text-nav active" aria-current="page" href="#mostPopular">Most Popular</a>
                 </li>
@@ -183,13 +183,18 @@
     
 <!--********************** Most Popular Cards********************-->
 
-      <div class="row mx-auto">
-            <div class= "col-sm-5 col-lg-4 card1row"> 
-                <div class="rowOfThree">
-                    <div class="card" style="width: 18rem;">
+    <div class="container">  
+        <div class="row containerCenter">
+          
+          
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+<!--                    Space around-->
+                </div>
+                    <div class="card container-fluid">
                       <img src="../images/rz3.png" class="card-img-top" alt="Person wearing bright orange tuille tutu.">
                           <div class="card-body">
-                            <h1 class="card-title">The Parisien</h1>
+                            <h1 class="card-title pd">The Parisien</h1>
                             <h2 class = "cPrice">Price: €70</h2>
                             <button id = "pop1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="pop1Btn()">
                               Buy
@@ -197,14 +202,15 @@
                           </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-sm-5 col-lg-4" > 
-                <div class="rowOfThree" >
-                    <div class="card" style="width: 18rem;">
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+<!--                    Space around-->
+                </div>
+                    <div class="card container-fluid">
                       <img src="../images/rsz_15.png" class="card-img-top" alt="woman in white knee-length dress lying on shadowed grass">
                           <div class="card-body">
-                            <h1 class="card-title">Atlanta Dress</h1>
+                            <h1 class="card-title pd">Atlanta Dress</h1>
                             <h2 class = "cPrice">Price: €160</h2>
                             <button id = "pop2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="pop2Btn()">
                               Buy
@@ -212,10 +218,14 @@
                           </div>
                     </div>
                 </div>
-            </div>
-            <div class= "col-sm-5 col-lg-4" > 
-                <div class="rowOfThree">
-                    <div class="card" style="width: 18rem;">
+           
+            <div class= "col-lg-4 card1row"> 
+<!--
+                <div class="col-lg-1">
+                    Space around
+                </div>
+-->
+                    <div class="card container-fluid">
                       <img src="../images/rsz_orangedress.png" class="card-img-top" alt="Woman in long orange maxi dress standing on the sand on the beach with a straw hat.">
                           <div class="card-body">
                             <h1 class="card-title">Savannah Dress</h1>
@@ -227,6 +237,7 @@
                     </div>
                 </div>
             </div>
+    </div>
        
      
 
@@ -258,38 +269,46 @@
     <!--********************** Dress Cards********************-->
 
         
-            <div class= "col-sm-5 col-lg-4 card1row"> 
-                <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+     <div class="container">
+        <div class="row containerCenter">    
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
                   <img src="../images/rsz_52.png" class="card-img-top" alt="Woman wearing long green flowing dress with trees printed on it.">
                   <div class="card-body">
-                    <h1 class="card-title">Georgia Dress</h1>
+                    <h1 class="card-title pd">Georgia Dress</h1>
                     <h2 class = "cPrice">Price: €120</h2>
                     <button id = "dresses1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="dress1Btn()">
                       Buy
                     </button>
                   </div>
                 </div>
-                </div>
             </div>
+            
 
-            <div class="col-sm-5 col-lg-4" > 
-                <div class="rowOfThree" >
-                    <div class="card" style="width: 18rem;">
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
                       <img src="../images/rsz_15.png" class="card-img-top" alt="woman in white knee-length dress lying on shadowed grass">
                           <div class="card-body">
-                            <h1 class="card-title">Atlanta Dress</h1>
+                            <h1 class="card-title pd">Atlanta Dress</h1>
                             <h2 class = "cPrice">Price: €160</h2>
                              <button id = "dresses2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="dress2Btn()">
                               Buy
                             </button>
                           </div>
                     </div>
+        </div>
+            
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
                 </div>
-            </div>
-            <div class= "col-sm-5 col-lg-4" > 
-                <div class="rowOfThree">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card container-fluid">
                       <img src="../images/rsz_orangedress.png" class="card-img-top" alt="Woman in long orange maxi dress standing on the sand on the beach with a straw hat.">
                           <div class="card-body">
                             <h1 class="card-title">Savannah Dress</h1>
@@ -299,8 +318,10 @@
                             </button>
                           </div>
                     </div>
-                </div>
             </div>
+        </div>
+    </div>
+            
 
           <!--********************** Space ********************-->
         <div class="aboveSpace">
@@ -330,23 +351,30 @@
             <h1 id="tops" class = "h1ClothingCards">Tops</h1>
         </div>
      <!--********************** Top Cards********************-->   
-        <div class= "col-sm-5 col-lg-4 card1row" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/whitetop1.png" class="card-img-top" alt="Woman in white crop-top with a high neckline.">
-                      <div class="card-body">
-                        <h1 class="card-title">The Artemis</h1>
-                        <h2 class = "cPrice">Price: €60</h2>
-                        <button id = "top1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="top1Btn()">
-                              Buy
-                        </button>
+    <div class="container">
+        <div class="row containerCenter">
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
+                      <img src="../images/whitetop1.png" class="card-img-top" alt="Woman in white crop-top with a high neckline.">
+                          <div class="card-body">
+                            <h1 class="card-title">The Artemis</h1>
+                            <h2 class = "cPrice">Price: €60</h2>
+                            <button id = "top1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="top1Btn()">
+                                  Buy
+                            </button>
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-5 col-lg-4"> 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+        
+        
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                <div class="card container-fluid">
                   <img src="../images/whitetrousersbeigetop1.png" class="card-img-top" alt="Woman in creamy beige wrap top and white trousers sitting on the edge of a white seat with the beach and sea in the background.">
                       <div class="card-body">
                         <h1 class="card-title">The Athena</h1>
@@ -357,11 +385,13 @@
                       </div>
                 </div>
             </div>
-        </div>
+       
 
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+            </div>
+                <div class="card container-fluid">
                   <img src="../images/yellowskirtblacktop1.png" class="card-img-top" alt="Woman in black boob-tube and orange skirt standing on city street.">
                       <div class="card-body">
                         <h1 class="card-title">The Hera</h1>
@@ -373,6 +403,7 @@
                 </div>
             </div>
         </div>
+    </div>
          <!--********************** Space ********************-->
         <div class="aboveSpace">
             <div class="aboveSpace">
@@ -403,9 +434,13 @@
             </div>
         </div>
     <!--********************** Skirt Cards********************-->
-        <div class="col-sm-5 col-lg-4 card1row" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+    <div class="container">
+        <div class="row containerCenter">
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
                   <img src="../images/rz3.png" class="card-img-top" alt="Person wearing bright orange tuille tutu.">
                       <div class="card-body">
                         <h1 class="card-title">The Parisien</h1>
@@ -416,10 +451,13 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+        
+       
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+            </div>
+            <div class="card container-fluid">
                   <img src="../images/rz53.png" class="card-img-top" alt="Boho skirt. Woman in red and green skirt walking along a path beside the sea holding a circular straw bag">
                       <div class="card-body">
                         <h1 class="card-title">The Marseillais</h1>
@@ -430,10 +468,12 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+        
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+            </div>
+                <div class="card container-fluid">
                   <img src="../images/rzblueskirtwhitetop.png" class="card-img-top" alt="Woman in bohemian white top wearing A-line blue skirt">
                       <div class="card-body">
                         <h1 class="card-title">The Lyonnais</h1>
@@ -445,6 +485,8 @@
                 </div>
             </div>
         </div>
+    </div>
+    
         <!--********************** Space ********************-->
         <div class="aboveSpace">
             <div class="aboveSpace">
@@ -475,12 +517,16 @@
             </div>
         </div>
     <!--********************** Trousers Cards********************--> 
-        <div class= "col-sm-5 col-lg-4 card1row"> 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+    <div class="container">
+         <div class="row containerCenter">   
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                <div class="card container-fluid">
                   <img src="../images/rsz_sequinflares.png" class="card-img-top" alt="Woman leaning against a wall in sequin flares wearing open long white top and black bra.">
                       <div class="card-body">
-                        <h1 class="card-title">London Mod</h1>
+                        <h1 class="card-title pd">London Mod</h1>
                         <h2 class="cPrice">Price: €110</h2>
                         <button id = "trouser1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="trouser1Btn()">
                               Buy
@@ -488,14 +534,17 @@
                       </div>
                 </div>
             </div>
-        </div>
+        
 
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree" >
-                <div class="card" style="width: 18rem;">
+        
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+            </div>
+                <div class="card container-fluid">
                   <img src="../images/rzflaredtrousersblackblazer.png" class="card-img-top" alt="Woman standing on a roof in black suit with flared trousers and white bag.">
                       <div class="card-body">
-                        <h1 class="card-title">Tokyo Chic</h1>
+                        <h1 class="card-title pd">Tokyo Chic</h1>
                         <h2 class="cPrice">Price: €70</h2>
                         <button id = "trouser2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="trouser2Btn()">
                               Buy
@@ -503,10 +552,12 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class= "col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+        
+        <div class= "col-lg-4 card1row"> 
+            <div class="col-lg-1">
+                    <!--Space around-->
+            </div>
+                <div class="card container-fluid">
                   <img src="../images/rzfunkyjeans.png" class="card-img-top" alt="Woman in funky blue flared trousers in the same blue jacket with white top dancing at the bottom of steps.">
                       <div class="card-body">
                         <h1 class="card-title">New York Vogue</h1>
@@ -518,6 +569,7 @@
                 </div>
             </div>
         </div>
+    </div>
      <!--********************** Space ********************-->
         <div class="aboveSpace">
             <div class="aboveSpace">
@@ -548,9 +600,13 @@
             </div>
         </div>
     <!--********************** Coats Cards********************-->    
-        <div class= "col-sm-5 col-lg-4 card1row" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
+    <div class="container">
+        <div class="row containerCenter">    
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                <div class="card container-fluid">
                   <img src="../images/rsz_127.png" class="card-img-top" alt="Woman in leather jacket standing in a field.">
                       <div class="card-body">
                         <h1 class="card-title">Takeko Jacket</h1>
@@ -561,36 +617,41 @@
                       </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-5 col-lg-4"> 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/rz4.png" class="card-img-top" alt="Woman in a long orange coat and a hat walking down steps at the front of a building.">
-                      <div class="card-body">
-                        <h1 class="card-title">Zenobia Coat</h1>
-                        <h2 class="cPrice">Price: €180</h2>
-                        <button id = "coat2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="coat2Btn()">
-                              Buy
-                        </button>
-                      </div>
+        
+        <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
                 </div>
+                    <div class="card container-fluid">
+                      <img src="../images/rz4.png" class="card-img-top" alt="Woman in a long orange coat and a hat walking down steps at the front of a building.">
+                          <div class="card-body">
+                            <h1 class="card-title">Zenobia Coat</h1>
+                            <h2 class="cPrice">Price: €180</h2>
+                            <button id = "coat2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="coat2Btn()">
+                                  Buy
+                            </button>
+                          </div>
+                    </div>
             </div>
-        </div>
+        
 
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/rzleatherjacket.png" class="card-img-top" alt="Woman in black leather jacket starring out the window.">
-                      <div class="card-body">
-                        <h1 class="card-title">Tomoe Jacket</h1>
-                        <h2 class="cPrice">Price: €120</h2>
-                        <button id = "coat3btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="coat3Btn()">
-                              Buy
-                        </button>
-                      </div>
+        <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
                 </div>
+                    <div class="card container-fluid">
+                      <img src="../images/rzleatherjacket.png" class="card-img-top" alt="Woman in black leather jacket starring out the window.">
+                          <div class="card-body">
+                            <h1 class="card-title">Tomoe Jacket</h1>
+                            <h2 class="cPrice">Price: €120</h2>
+                            <button id = "coat3btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="coat3Btn()">
+                                  Buy
+                            </button>
+                          </div>
+                    </div>
             </div>
         </div>
+    </div>
         <!--********************** Space ********************-->
         <div class="aboveSpace">
             <div class="aboveSpace">
@@ -621,50 +682,59 @@
             </div> 
         </div>
     <!--********************** Accessory Cards********************--> 
-        <div class="col-sm-5 col-lg-4 card1row" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/rz5.png" class="card-img-top" alt="Woman in blue pinstriped dress holding circular straw bag with pink scarf tied around the strap">
-                      <div class="card-body">
-                        <h1 class="card-title">The Syria Bag</h1>
-                        <h2 class="cPrice">Price: €45</h2>
-                        <button id = "acc1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc1btn()">
-                              Buy
-                        </button>
-                      </div>
+    <div class="container">
+        <div class="row containerCenter">
+            <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
+                      <img src="../images/rz5.png" class="card-img-top" alt="Woman in blue pinstriped dress holding circular straw bag with pink scarf tied around the strap">
+                          <div class="card-body">
+                            <h1 class="card-title pd">The Syria Bag</h1>
+                            <h2 class="cPrice">Price: €45</h2>
+                            <button id = "acc1btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc1btn()">
+                                  Buy
+                            </button>
+                          </div>
+                    </div>
+            </div>
+        
+        <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
+                </div>
+                    <div class="card container-fluid">
+                      <img src="../images/rsz_2cropped48.png" class="card-img-top" alt="Woman with pinstriped flowing trousers holding yellow circular straw bag with purple scarf wrapped around the strap.">
+                          <div class="card-body">
+                            <h1 class="card-title">The Mediteranean Bag</h1>
+                            <h2 class="cPrice">Price: €45</h2>
+                            <button id = "acc2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc2btn()">
+                                  Buy
+                            </button>
+                          </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/rsz_2cropped48.png" class="card-img-top" alt="Woman with pinstriped flowing trousers holding yellow circular straw bag with purple scarf wrapped around the strap.">
-                      <div class="card-body">
-                        <h1 class="card-title">The Mediteranean Bag</h1>
-                        <h2 class="cPrice">Price: €45</h2>
-                        <button id = "acc2btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc2btn()">
-                              Buy
-                        </button>
-                      </div>
+        
+        <div class= "col-lg-4 card1row"> 
+                <div class="col-lg-1">
+                    <!--Space around-->
                 </div>
+                    <div class="card container-fluid">
+                      <img src="../images/rsz_1scarf.png" class="card-img-top" alt="Smiling woman wearing a purple scarf with trees in the background">
+                          <div class="card-body">
+                            <h1 class="card-title pd">The Sicilian Scarf</h1>
+                            <h2 class="cPrice">Price: €60</h2>
+                            <button id = "acc3btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc3btn()">
+                                  Buy
+                            </button>
+                          </div>
+                    </div>
             </div>
         </div>
-        <div class="col-sm-5 col-lg-4" > 
-            <div class="rowOfThree">
-                <div class="card" style="width: 18rem;">
-                  <img src="../images/rsz_1scarf.png" class="card-img-top" alt="Smiling woman wearing a purple scarf with trees in the background">
-                      <div class="card-body">
-                        <h1 class="card-title">The Sicilian Scarf</h1>
-                        <h2 class="cPrice">Price: €60</h2>
-                        <button id = "acc3btn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" onclick="acc3btn()">
-                              Buy
-                        </button>
-                      </div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>  
+    </div>
+      
+  
         <!--  ***************footer ******************-->
  <footer>   
     <div class="container-fluid footer">
