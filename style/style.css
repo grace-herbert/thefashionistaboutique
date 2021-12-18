@@ -7,13 +7,20 @@
 }
 
 @media (max-width: 480px){
-    .regSbmtbtn{
+.regSbmtbtn{
     margin:auto;
     background-color: #3b3b3b;
     flex-wrap: wrap;
     color: white;
+        
+    }
+    
+.largeContainer{
+    display: none !important;
+    }
 }
-}
+/*    .navbar-expand{-sm}*/
+
 
 /***************Homepage*****************/
 /*****************header*******************/
@@ -29,6 +36,16 @@
 .imgLogo{
     padding-top: 10px;
     padding-left: 30px;
+    display: flex;
+}
+
+.socMed{
+    margin: 0 auto;
+    display: flex;
+    max-width: 2px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
 }
 
 /*****************navbar*******************/
@@ -49,10 +66,18 @@
     padding-right: 20px;
 }
 
-/*****************Cards***************
+/*****************Carousel****************/
 
+/*helped by code found from https://stackoverflow.com/questions/38695846/change-height-of-bootstrap-carousel-keeping-it-responsive/38696655 to help make the carousel take up less space yet keep the responsiveness*/
+.carousel img {
+    width: auto;
+    max-height: 550px;
+    margin: 0 auto;
+}
 
-/*cards need padding on the left*/
+/*****************Cards****************/
+
+cards need padding on the left
 .card1row{
     padding-left: 20px;
 }
@@ -132,11 +157,11 @@
 
 #conQuery{
     height: 150px;
-    width: 350px;
+    width: 100%;
 }
 
 #conEmail{
-    width: 350px;
+    width: 100%;
 }
 
 .contact{
@@ -151,6 +176,7 @@
 .conLabel{
     padding-top: 7px;
     padding-bottom: 7px;
+    width: 100%;
 
 }
 
@@ -193,7 +219,7 @@
     max-height: 100%;
 }
 
-/*********dresses**********/
+/*********dresses*********/
 
 .clothesContainer{
     display: flex;
@@ -205,8 +231,8 @@
 .aboveSpace{
     flex-basis: 100%;
     flex: 1 0 100%;
-/*    flex-direction: row;*/
-/*    flex-wrap: wrap;*/
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 250px;
 }
 

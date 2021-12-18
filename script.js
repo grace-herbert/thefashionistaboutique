@@ -213,6 +213,8 @@ function submit(){
         var pswd = document.getElementById("regPswd").value;
         
         users.push({fName: fName, lName: lName, email: email, password: pswd});
+        alert("Congratulations, you're signed in.");
+        loggedIn();
         
 //Obviously in real life you would never ever have the password like this, but for the purposes of achieving login I'm doing it this way as I don't have enough time to research how I might incorporate hashing into the site.
     
@@ -244,6 +246,7 @@ function checkValidation(){
 
                     newEmail = true;
                     console.log("This is a new email: " + newEmail);
+                    userEmail = emailInput;
                 }
 
         }
@@ -315,43 +318,56 @@ function loggedIn(){
 }
 
 //Ideally I should have had separate check email and password validation functions which would have given me better reusability and I wouldn't have had to repeat code. I'll be doing this next time.
+let loginCount = 0;
+//The code below wouldn't work
+
+// while(loginCount < 3){
+//     login();
+//     if(loginCount >=3 && pswdValid == false ){
+//        $(document).ready(function() {
+//        $("#loginForm").toggle();
+//        $("h1").text("Incorrect password.");
+//        $("#pg").text("You have entered the incorrect password 3 times. Please try again later.");
+//        });
+//    }
+//     
+// }
 
 function login(){
     event.preventDefault();
-    let here = "here";
-    let loginCount = 0;
-    let hereLink = here.link("../register/index.html");
-//    check for existing email address
-            for(i = 0; i < users.length; i++){
-            console.log(users[i].email);
-                if (document.getElementById("logEmail").value === users[i].email){
-                    console.log(users[i].email);
-                    newEmail = false;
-                    
-                    while(loginCount < 3){
-                        if(document.getElementById("logPswd").value == users[i].password){
-                           alert("You're in!");
-                            userEmail = users[i].email;
-                            loggedIn();
-                            break;
-                           }
-                        else{
-                            alert("Incorrect password. Please try again.");
-                            loginCount++; 
-                            break;
-                            }
-                    }
-                }   
-                else{
-                    alert("This email is not registered with us. Please create an account.");
-                    document.getElementById("inputError").innerHTML = "This email is not registered with us. Please create an account " + hereLink;
-                    
-                }
-                
+        let here = "here";
+        let hereLink = here.link("../register/index.html");
+    //    check for existing email address
+                for(i = 0; i < users.length; i++){
+                console.log(users[i].email);
+                    if (document.getElementById("logEmail").value === users[i].email){
+                        console.log(users[i].email);
+                        newEmail = false;
+                            if(document.getElementById("logPswd").value == users[i].password){
+                                pswdValid = true;
+                               alert("You're in!");
+                                userEmail = users[i].email;
+                                loggedIn();
+                                break;
+                               }
+                            else{
+                                pswdValid = false;
+                                alert("Incorrect password. Please try again.");
+                                loginCount++; 
 
-        }
-    
-}
+                                }
+                    }   
+                    else{
+                        alert("This email is not registered with us. Please create an account.");
+                        document.getElementById("inputError").innerHTML = "This email is not registered with us. Please create an account " + hereLink;
+
+                    }
+
+
+            }
+
+    }
+
 
 
 

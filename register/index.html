@@ -43,6 +43,9 @@
               <a class="nav-link active" aria-current="page" href="../index.html#home">Home</a>
             </li>
             <li class="top-nav-item wider">
+              <a class="nav-link" href="clothing/index.html">Clothing</a>
+            </li>
+            <li class="top-nav-item wider">
               <a class="nav-link" href="../clothing/index.html#mostPopular">Most Popular</a>
             </li>
               <li class="top-nav-item lessWide">
@@ -90,9 +93,9 @@ The hard coded <h1>'s etc are a last resort if I don't figure out a way that wor
         <div class="container-fluid account">
         <div class="row">
             <h1>Create Account</h1>
-            <p>Please fill in the details below to create an account.</p>
+            <p id="pg">Please fill in the details below to create an account.</p>
             <div class="col-lg-8">
-                <form onsubmit="checkValidation()">
+                <form id = "loginForm" onsubmit="checkValidation()">
                 <section id="regNames">
                   <label for="fName">First Name:</label><br>
                   <input type="text" id="fName" name="lName" value =" " required>
@@ -173,44 +176,41 @@ The hard coded <h1>'s etc are a last resort if I don't figure out a way that wor
     <!--  ***************footer ******************-->
     
 <!--    Within the footer for the final report there will be working forms and these will use form validation with javascript and html. For now the button colours have been changed through css and rounded, colour of section has been changed and different padding has been added to different sections. jQuery used to make changes on basket footer-->
-    <footer>    
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 footer basketFooter">
-                    <div class="row">
-     <!--***********************Contact Us**********************-->
-                        <div class="col-lg-5 contact">
-                            <h1 class = "footerH1">Contact Us</h1>
-                            <form onsubmit="submitContact()" method="post" action="mailto:herbert.grace.c@gmail.com">
-                              <label for="fname" class="conLabel conFName">First name:</label>
-                                <br>
-                              <input type="text" id="fname" name="fname" class="conCorners">
-                                <br>
-                              <label for="lname" class="conLabel">Last name:</label>
-                                <br>
-                              <input type="text" id="lname" name="lname" class="conCorners">
-                                <br>
-                              <label for="email" class="conLabel">email:</label>
-                                <br>
-                              <input type="email" id="conEmail" name="email" class="conCorners">
-                                <br>
-                              <label for="query" class="conLabel">Query:</label>
-                                <br>
-                              <input type="text" id="conQuery" name="query" class="conCorners">
-                                <br>
-                                <br>
-            <!--                    <button class="btn-submit">Submit</button>
-    Changed colours of submit buttons and rounded corners
-
-                                                    -->
-                              <input type="submit" value="Submit" class="conCorners sbmtbtn basketConSubmitBtn">
-                                <br>
-                            </form>
+    <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 footer">
+                <div class="row">
+ <!--***********************Contact Us**********************-->
+                    <div class="col-lg-5 contact">
+                        <h1 class = "footerH1">Contact Us</h1>
+                        <form onsubmit="submitContact()" method="post" action="mailto:herbert.grace.c@gmail.com">
+                          <label for="fname" class="conLabel conFName">First name:</label>
                             <br>
-                        </div>
- 
+                          <input type="text" id="fname" name="fname" class="conCorners">
+                            <br>
+                          <label for="lname" class="conLabel">Last name:</label>
+                            <br>
+                          <input type="text" id="lname" name="lname" class="conCorners">
+                            <br>
+                          <label for="email" class="conLabel">email:</label>
+                            <br>
+                          <input type="email" id="conEmail" name="email" class="conCorners">
+                            <br>
+                          <label for="query" class="conLabel">Query:</label>
+                            <br>
+                          <input type="text" id="conQuery" name="query" class="conCorners">
+                            <br>
+                            <br>
+        <!--                    <button class="btn-submit">Submit</button>-->
+                          <input type="submit" value="Submit" class="conCorners sbmtbtn">
+                            <br>
+                        </form>
+                        <br>
+                    </div>
 
-        <!--  ***************business address ******************-->
+
+           <!--  ***************business address ******************-->
 
                         <div class="col-lg-5 businessAddress">
                             <br>
