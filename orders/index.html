@@ -8,9 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body id="basketBody">
+<body id="basketBody" onload="displayBasket()">
     <!--    ****************header******************-->
     
 <!--    logo made with image editing in canva-->
@@ -93,90 +94,19 @@ The hard coded <h1>'s etc are a last resort if I don't figure out a way that wor
     <div class="container-fluid basket">
         <div class="row">
             <div id="addOrders" class="col-lg-9" onload="displayBasket(); displayOrders();">
-                <button type="button" class="btn btn-dark"  onclick="displayBasket()">test2</button>
-                <h1>Orders</h1>
-                <h2 id="orderHeading1"></h2>
-                <img id = "orderImg1"/>
-                <h2 id="orderQuantity1"></h2>
-                <p id="orderDesc1"></p>
-                <h2 id="orderPrice1"></h2>
-                <br>
-                <h2 id="orderHeading2"></h2>
-                <img id = "orderImg2"/>
-                <h2 id="orderQuantity2"></h2>
-                <p id="orderDesc2"></p>
-                <h2 id="orderPrice2"></h2>
-                <br>
-                  <h2 id="orderHeading3"></h2>
-                <img id = "orderImg3"/>
-                <h2 id="orderQuantity3"></h2>
-                <p id="orderDesc3"></p>
-                <h2 id="orderPrice3"></h2>
-                <br>
-                <h2 id="orderHeading4"></h2>
-                <img id = "orderImg4"/>
-                <h2 id="orderQuantity4"></h2>
-                <p id="orderDesc4"></p>
-                <h2 id="orderPrice4"></h2>
-                <br>
-                <h2 id="orderHeading5"></h2>
-                <img id = "orderImg5"/>
-                <h2 id="orderQuantity5"></h2>
-                <p id="orderDesc5"></p>
-                <h2 id="orderPrice5"></h2>
-                <br>
-                <h2 id="orderHeading6"></h2>
-                <img id = "orderImg6"/>
-                <h2 id="orderQuantity6"></h2>
-                <p id="orderDesc6"></p>
-                <h2 id="orderPrice6"></h2>
-                <br>
-                <h2 id="orderHeading7"></h2>
-                <img id = "orderImg7"/>
-                <h2 id="orderQuantity7"></h2>
-                <p id="orderDesc7"></p>
-                <h2 id="orderPrice7"></h2>
-                <br>
-                <h2 id="orderHeading8"></h2>
-                <img id = "orderImg8"/>
-                <h2 id="orderQuantity8"></h2>
-                <p id="orderDesc8"></p>
-                <h2 id="orderPrice8"></h2>
-                <br>
-                <h2 id="orderHeading9"></h2>
-                <img id = "orderImg9"/>
-                <h2 id="orderQuantity9"></h2>
-                <p id="orderDesc9"></p>
-                <h2 id="orderPrice9"></h2>
-                <br>
-                <h2 id="orderHeading10"></h2>
-                <img id = "orderImg10"/>
-                <h2 id="orderQuantity10"></h2>
-                <p id="orderDesc10"></p>
-                <h2 id="orderPrice10"></h2>
-                <br>
-                <h2 id="orderHeading11"></h2>
-                <img id = "orderImg11"/>
-                <h2 id="orderQuantity11"></h2>
-                <p id="orderDesc11"></p>
-                <h2 id="orderPrice11"></h2>
-                <br>
-                <h2 id="orderHeading12"></h2>
-                <img id = "orderImg12"/>
-                <h2 id="orderQuantity12"></h2>
-                <p id="orderDesc12"></p>
-                <h2 id="orderPrice12"></h2>
-                <br>
-                
-                
-                
-                <button type="button" class="btn btn-dark"  onclick="displayOrders()"></button>
-
-                
-                
-                
-                
+                <h1 >Orders</h1>
             </div>
+            <br>
+            <h1 id="totalH1">Total: €</h1>
+            <br>
+            
+        </div>
+        <div id="btnsDiv">
+            <br>
+            <a href = "../clothing/index.html"><button type="button" class="btn btn-dark"  >Continue Shopping</button></a> 
+            <a href = "../payment/index.html" ><button type="button" class="btn btn-dark float-lg-right" >Go To Payment</button></a>
+            <br>
+            <br>
         </div>
     </div>
     
